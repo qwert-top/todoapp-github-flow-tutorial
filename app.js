@@ -29,9 +29,15 @@ $(document).on("change", "input[type=checkbox]", function () {  //チェック�
 /*テキストを入力してEnterキーを押せば、
 リストに追加されるようにしたい。
 */
-$("input").keypress(function(e) {
+$("#input").keypress(function(e) {
     if (e.keyCode == 13) {
         $("#addTodo").click();  
         return false;
     }
+});
+
+$("#deleteTodo").click(function () {
+    $("#todoList li input[type='checkbox']:checked").each(function () {
+        $(this).closest("li").remove();
+    });
 });
