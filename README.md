@@ -10,7 +10,8 @@
 <br>
 This is a simple To-Do app.<br>
 There are 4 main features.<br>
-1. Able to add tasks to To-Do list<br>
+機能は主に4つあります。
+1. Able to add tasks to To-Do list<br>  
 2. Able to check off completed tasks<br>
 3. A strikethrough is applied when a task is checked, which makes it clear which tasks are completed<br>
-4. Able to delete completed tasks with delete button<br>
+5. Able to delete completed tasks with delete button<br>
