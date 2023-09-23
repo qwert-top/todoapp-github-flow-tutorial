@@ -6,16 +6,17 @@ ToDoリストに新しいアイテムが追加され、
 
 $("#addTodo").click(function () {  //クリックされたときに実行することを定義
     const inputTodo = $("input").val();  //テキストボックスからテキストを取得し変数に格納
-    $("#todoList").append("<li><input type='checkbox'>" + inputTodo + "</li>");  //リストに追加
-  
-    $("input").val("");  //リストに追加したら、テキストボックスはクリア
-  });
+    if (inputTodo.trim() !== "") {
+        $("#todoList").append("<li><input type='checkbox'>" + inputTodo + "</li>");  //リストに追加
+        $("input").val("");  //リストに追加したら、テキストボックスはクリア
+    }
+});
 
-  /*ToDoリストの各アイテムにチェックボックスを付けて、
-  ユーザーがチェックボックスの状態を変更すると、
-  テキストのスタイルを変更して表示を更新する。
+/*ToDoリストの各アイテムにチェックボックスを付けて、
+ ユーザーがチェックボックスの状態を変更すると、
+ テキストのスタイルを変更して表示を更新する。
   */
-  $(document).on("change", "input[type=checkbox]", function () {  //チェックボックスの状態が変更されたときに実行されることを定義
+$(document).on("change", "input[type=checkbox]", function () {  //チェックボックスの状態が変更されたときに実行されることを定義
     if ($(this).is(":checked")) {  //チェックボックスがチェックされている場合...
       $(this).parent().css("text-decoration", "line-through");  //テキストに打ち消し線を追加
       $(this).parent().css("color", "#ccc");  //テキストの色を灰色に変更
@@ -25,3 +26,12 @@ $("#addTodo").click(function () {  //クリックされたときに実行する�
     }
   });
   
+/*テキストを入力してEnterキーを押せば、
+リストに追加されるようにしたい。
+*/
+$("input").keypress(function(e) {
+    if (e.keyCode == 13) {
+        $("#addTodo").click();  
+        return false;
+    }
+});
