@@ -1,6 +1,13 @@
 # todoapp-github-flow-tutorial
 
-## 説明/Description  
+## 背景/background
+初めてWebアプリを作りました。<br>
+また、初めてHTMLとCSS、JavaScriptを使ったコーディングに挑戦してみました。<br>
+<br>
+This is my very first time creating a web application.<br>
+It's also my first time coding with HTML, CSS, and JavaScript.<br>
+
+## アプリの説明/App Description  
 シンプルなTodoアプリです。<br>
 機能は主に5つあります。
 1. ToDoリストにタスクを追加できる  
@@ -10,7 +17,7 @@
 5. タスクをTodayとSomedayに分けることができる<br>
 
 このコードはhttps://github.com/Shin-sibainu/todoapp-github-flow-tutorial.git を元に作成しました。<br>
-しかし、機能4以降は自分で付け加えたものです。<br>
+しかし、機能4と5は自分で付け加えたものです。<br>
 <br>
 This is a simple To-Do app.<br>
 There are 5 main features.<br>
