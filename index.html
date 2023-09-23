@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo app</title>
   </head>
+  <!-- header -->
+  <header>
+    <h1 class="headline">
+      <a>To-Do List</a>
+    </h1>
+  </header>
   <body>
+    
     <div>
         <select id="whenTodo">
-            <option value="not-selected">Select</option>
+            <option value="notSelected">Select</option>
             <option value="today">Today</option>
             <option value="someday">Someday</option>
         </select>
@@ -18,9 +25,6 @@
         <input type="text" id="input" />
         <button id="addTodo">Add</button>
         <button id="deleteTodo">Delete</button>
-    </div>
-    <div>
-        <p>選択結果 <span id="span4"></span></p>
     </div>
     <div>
         Today<br>
