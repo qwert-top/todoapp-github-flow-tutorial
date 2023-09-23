@@ -2,7 +2,7 @@
 
 ## 説明/Description  
 シンプルなTodoアプリです。<br>
-機能は主に4つ<br>
+機能は主に4つあります。<br>
 1. ToDoリストにタスクを追加できる  
 2. 終わったタスクにチェックを入れることができる
 3. チェックを入れると取り消し線が引かれ、どれが終わったかが見やすい
@@ -10,7 +10,7 @@
 <br>
 This is a simple To-Do app.<br>
 There are 4 main features.<br> 
-- Able to add task to the To-Do list  
-- Able to check off completed tasks
-- A strikethrough is applied when a task is checked, which makes it clear which tasks are completed
-- Able to delete completed tasks with delete button  
+- Able to add task to the To-Do list<br>
+- Able to check off completed tasks<br>
+- A strikethrough is applied when a task is checked, which makes it clear which tasks are completed<br>
+- Able to delete completed tasks with delete button<br>
